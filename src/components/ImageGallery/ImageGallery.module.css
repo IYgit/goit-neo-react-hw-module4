@@ -1,0 +1,31 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  .item {
+    flex-basis: calc(25% - 16px);
+    max-width: calc(25% - 16px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .item {
+      flex-basis: calc(50% - 16px);
+      max-width: calc(50% - 16px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+  
